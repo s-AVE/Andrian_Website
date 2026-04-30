@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrian Wijaya — Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo" data-scroll="hero">AW</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"      class="nav-link" data-scroll="about">About</a></li>
+      <li><a href="#skills"     class="nav-link" data-scroll="skills">Skills</a></li>
+      <li><a href="#projects"   class="nav-link" data-scroll="projects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-scroll="experience">Experience</a></li>
+      <li><a href="#contact"    class="nav-link nav-cta" data-scroll="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Data Analyst · Power BI · Data Studio · Excel · SQL </p>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="name-first">Andrian</span>
+        <span class="name-last"><em>Wijaya</em></span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-2">
+        <span class="quote-block">
+          <span class="quote-mark">"</span>Visualization shows the <span class="highlight">'what.'</span><br>
+          Storytelling reveals the <span class="highlight">'why.'</span><span class="quote-mark">"</span>
+        </span>
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <button class="btn btn-primary" data-scroll="projects">View Projects</button>
+        <button class="btn btn-ghost"   data-scroll="contact">Get in Touch</button>
+      </div>
+    </div>
+
+    <!-- Scroll hint — fixed left edge, never overlaps content -->
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Counters — bottom right -->
+    <div class="hero-counter reveal-up delay-3">
+      <div class="counter-item">
+        <span class="counter-num" data-target="10" data-suffix="+">0</span>
+        <span class="counter-label">Projects Completed</span>
+      </div>
+      <div class="counter-divider"></div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="2" data-suffix="+">0</span>
+        <span class="counter-label">Years of Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <div class="about-img-frame">
+              <img src="assets/profile.jpg" alt="Andrian Wijaya" class="about-photo" />
+            </div>
+            <div class="about-badge">
+              <span class="badge badge-available">● Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card card">
+              <span class="stat-num">Power BI</span>
+              <span class="stat-label">Primary Tool</span>
+            </div>
+            <div class="stat-card card">
+              <span class="stat-num">SQL</span>
+              <span class="stat-label">Data Querying</span>
+            </div>
+            <div class="stat-card card">
+              <span class="stat-num">Excel</span>
+              <span class="stat-label">Data Manipulation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">— About Me</div>
+          <h2 class="section-title">Turning data into <em>decisions</em></h2>
+          <p class="about-body">
+            Data Analyst with 2+ years of experience supporting national-scale education programs at the Ministry of Education. Skilled at transforming complex monitoring &amp; evaluation data into clear, actionable insights for senior stakeholders.
+          </p>
+          <p class="about-body">
+            Proficient in Power BI, Microsoft Excel, SQL, and survey design. Proven track record of driving data-driven decisions across 177 educational institutions. Seeking a Data Analyst role where I can deliver measurable impact.
+          </p>
+          <div class="about-tags">
+            <span class="badge badge-outline">Analytical Thinking</span>
+            <span class="badge badge-outline">Data Storytelling</span>
+            <span class="badge badge-outline">M&amp;E Specialist</span>
+            <span class="badge badge-outline">Stakeholder Reporting</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1oeMFduoo_7CoR9WU7FVcXrE4_FknTqcs/view?usp=drive_link"
+             target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Download Resume <span class="btn-icon">↓</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">— Technical Skills</div>
+        <h2 class="section-title">Tools I <em>master</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category card">
+          <h3 class="skill-cat-title">Data Analysis</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Microsoft Excel (Advanced)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Statistical Analysis / SPSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NVivo (Qualitative)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Survey Design</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category card">
+          <h3 class="skill-cat-title">Visualization &amp; BI</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Power BI (DAX, Power Query)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Google Data Studio</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Data Reporting</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Dashboard Design</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category card">
+          <h3 class="skill-cat-title">Data &amp; Management</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">SQL / MySQL (Advanced)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Monitoring &amp; Evaluation</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Project Management</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Stakeholder Communication</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">— Selected Projects</div>
+        <h2 class="section-title">Work that <em>speaks</em> for itself</h2>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="powerbi">Power BI</button>
+        <button class="filter-btn" data-filter="excel">Excel</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="report">Analysis Report</button>
+        <button class="filter-btn" data-filter="looker">Data Studio</button>
+      </div>
+
+      <!-- Grid: 6 visible at a time, paginated -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card card" data-category="powerbi" data-project="01" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/adventure_works.png" alt="Adventure Works Bike Company" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Power BI</span>
+                <span class="badge badge-outline">DAX</span>
+                <span class="badge badge-outline">Power Query</span>
+              </div>
+            </div>
+            <h3 class="project-title">Adventure Works Bike Company</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="powerbi" data-project="02" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/financial_dashboard.png" alt="Financial Dashboard" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Power BI</span>
+                <span class="badge badge-outline">Financial</span>
+                <span class="badge badge-outline">Budget Analysis</span>
+              </div>
+            </div>
+            <h3 class="project-title">Financial Dashboard</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="excel" data-project="03" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/visitasi2025.png" alt="PPG M&E Visitasi" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">03</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Excel</span>
+                <span class="badge badge-outline">M&amp;E</span>
+                <span class="badge badge-outline">PPG</span>
+              </div>
+            </div>
+            <h3 class="project-title">PPG M&amp;E Visitasi Calculation</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="sql" data-project="04" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/mysql-assignment.png" alt="MySQL Assignment Project" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">04</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">SQL</span>
+                <span class="badge badge-outline">MySQL</span>
+                <span class="badge badge-outline">Advanced Queries</span>
+              </div>
+            </div>
+            <h3 class="project-title">MySQL Assignment Project</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="sql" data-project="05" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/mysql-project.png" alt="MySQL Sports Analysis" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">05</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">SQL</span>
+                <span class="badge badge-outline">MySQL</span>
+                <span class="badge badge-outline">Sports Analytics</span>
+              </div>
+            </div>
+            <h3 class="project-title">MySQL Sports Analysis Project</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="report" data-project="06" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/monev-bk.png" alt="M&E School Counseling Report" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">06</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Analysis Report</span>
+                <span class="badge badge-outline">M&amp;E</span>
+                <span class="badge badge-outline">Education</span>
+              </div>
+            </div>
+            <h3 class="project-title">M&amp;E Report — School Counseling Services</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="report" data-project="07" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/monev-litnum.png" alt="M&E AI Literacy Report" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">07</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Analysis Report</span>
+                <span class="badge badge-outline">M&amp;E</span>
+                <span class="badge badge-outline">AI in Education</span>
+              </div>
+            </div>
+            <h3 class="project-title">M&amp;E Report — AI-Integrated Literacy &amp; Numeracy</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="looker" data-project="08" tabindex="0" role="button">
+          <div class="project-img-wrap">
+            <img src="assets/data-studio-4level-2025.png" alt="PPG 4-Level Survey" class="project-img" loading="lazy" />
+            <div class="project-img-overlay"><span>View Details</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">08</span>
+              <div class="project-tags">
+                <span class="badge badge-accent">Data Studio</span>
+                <span class="badge badge-outline">Survey Analysis</span>
+                <span class="badge badge-outline">PPG 2024</span>
+              </div>
+            </div>
+            <h3 class="project-title">PPG 4-Level M&amp;E Survey Analysis</h3>
+            <span class="project-hint">Click to view details →</span>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <!-- Pagination -->
+      <div class="projects-pagination" id="projectsPagination">
+        <button class="page-btn" id="pagePrev" aria-label="Previous page" disabled>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          Prev
+        </button>
+        <div class="page-dots" id="pageDots"></div>
+        <button class="page-btn" id="pageNext" aria-label="Next page">
+          Next
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">— Work Experience</div>
+        <h2 class="section-title">My professional <em>journey</em></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Feb 2024 — Dec 2025</span>
+          </div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <h3 class="exp-title">Data Analyst</h3>
+              <span class="exp-company">Ministry of Education, Primary &amp; Secondary — Jakarta</span>
+            </div>
+            <ul class="exp-list">
+              <li>Collected, processed, and analyzed M&amp;E data for Teacher Professional Education (PPG) programs across <strong>177 institutions</strong>.</li>
+              <li>Produced monitoring reports translating complex datasets into strategic recommendations for senior management and external stakeholders.</li>
+              <li>Designed and deployed surveys and data collection instruments to measure educational outcomes and program effectiveness.</li>
+              <li>Conducted on-site M&amp;E visits as a resource person, providing expert guidance to improve implementation processes.</li>
+              <li>Monitored impact of policy changes and recommended data-driven adjustments to optimize program quality.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="badge badge-sm">Power BI</span>
+              <span class="badge badge-sm">Excel</span>
+              <span class="badge badge-sm">SQL</span>
+              <span class="badge badge-sm">SPSS</span>
+              <span class="badge badge-sm">Survey Design</span>
+              <span class="badge badge-sm">M&amp;E</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Feb 2024 — Dec 2025</span>
+          </div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <h3 class="exp-title">Project Assistant Intern</h3>
+              <span class="exp-company">PT Hashmicro Solusi Indonesia — Jakarta</span>
+            </div>
+            <ul class="exp-list">
+              <li>Supervised 3 teams across 9 branding projects, ensuring all objectives were delivered on time and within budget.</li>
+              <li>Optimized project timelines, achieving a <strong>30% cost reduction</strong> (±IDR 4 million) through improved scheduling.</li>
+              <li>Directed end-to-end project management for diverse digital marketing initiatives.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="badge badge-sm">Project Management</span>
+              <span class="badge badge-sm">Digital Marketing</span>
+              <span class="badge badge-sm">Budgeting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Feb 2024 — Dec 2025</span>
+          </div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <h3 class="exp-title">Teaching Assistant</h3>
+              <span class="exp-company">Universitas Pendidikan Indonesia, Digital Business Dept. — Bandung</span>
+            </div>
+            <ul class="exp-list">
+              <li>Established digital marketing consulting partnerships with 5 SMEs.</li>
+              <li>Facilitated weekly sessions using 14 diverse case studies to develop students' analytical and critical thinking skills.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="badge badge-sm">Teaching</span>
+              <span class="badge badge-sm">Digital Marketing</span>
+              <span class="badge badge-sm">Case Studies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">May 2024 — Nov 2024</span>
+          </div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <h3 class="exp-title">Project Management Officer</h3>
+              <span class="exp-company">Regional Education Consortium (KPD)</span>
+            </div>
+            <ul class="exp-list">
+              <li>Managed quality control and system development alignment.</li>
+              <li>Acted as liaison between stakeholders and developers to define requirements and streamline business process integration.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="badge badge-sm">Quality Control</span>
+              <span class="badge badge-sm">Stakeholder Management</span>
+              <span class="badge badge-sm">Business Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-left">
+          <div class="section-label">— Contact</div>
+          <h2 class="section-title">Let's <em>connect</em></h2>
+          <p class="contact-body">I'm open to data analyst roles, freelance projects, and collaborative opportunities. If you have a problem that data can solve, let's talk.</p>
+          <div class="contact-info">
+            <a href="mailto:andrianwijaya.kerja@gmail.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>andrianwijaya.kerja@gmail.com</span>
+            </a>
+            <div class="contact-item no-link">
+              <span class="contact-icon">⌖</span>
+              <span>Lampung, Indonesia</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/s-AVE" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/andrianwi/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/andrianwj/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form card">
+            <div class="form-group">
+              <label class="form-label" for="inputName">Full Name</label>
+              <input class="form-input" type="text" id="inputName" placeholder="John Doe" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inputEmail">Email Address</label>
+              <input class="form-input" type="email" id="inputEmail" placeholder="john@example.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inputSubject">Subject</label>
+              <input class="form-input" type="text" id="inputSubject" placeholder="Collaboration / Job Opportunity" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inputMessage">Message</label>
+              <textarea class="form-input form-textarea" id="inputMessage" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Andrian Wijaya</p>
+        <p class="footer-copy">© 2025 — Built with clarity, driven by data</p>
+        <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal card" id="modalCard">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
