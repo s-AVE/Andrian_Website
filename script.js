@@ -48,6 +48,7 @@ const PROJECTS = {
     tags:    ['SQL', 'MySQL', 'Sports Analytics', 'Advanced Aggregation'],
     desc:    'You have access to decades worth of data including player statistics like schools attended, salaries, teams played for, height and weight, and more. This project uses advanced SQL querying techniques to track how player statistics have changed over time and across different teams in the league.',
     link:    { label: 'View on GitHub', url: 'https://github.com/s-AVE/SQL-project-analysis' },
+    link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1HlOmTDGgvdFjq0jB2SSO1xof6wfVr956/view?usp=sharing' },
     img:     'assets/project-05.png',
   },
   '06': {
