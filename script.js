@@ -371,12 +371,26 @@ window.openProjectModal = openProjectModal;
     if (err) { showNote(err, 'error'); return; }
     const btnText = submitBtn.querySelector('.btn-text');
     submitBtn.disabled = true; btnText.textContent = 'Sending...';
-    setTimeout(() => {
-      submitBtn.disabled = false; btnText.textContent = 'Send Message';
-      Object.values(f).forEach(el => { el.value = ''; });
-      showNote('✓ Message sent! I will get back to you soon.', 'success');
-      showToast('Message sent successfully!');
-    }, 1500);
+    fetch('https://formspree.io/f/maqvpkwl', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name:    f.name.value.trim(),
+        email:   f.email.value.trim(),
+        subject: f.subject.value.trim(),
+        message: f.message.value.trim(),
+      }),
+    })
+    .then(res => {
+      submitBtn.disabled = false;
+      btnText.textContent = 'Send Message';
+      if (res.ok) {
+        Object.values(f).forEach(el => { el.value = ''; });
+        showNote('✓ Message sent! I will get back to you soon.', 'success');
+        showToast('Message sent successfully!');
+      } else {
+        showNote('Something went wrong. Please try again.', 'error');
+      }
   });
   function showNote(msg, type) {
     formNote.textContent = msg; formNote.className = 'form-note ' + type;
