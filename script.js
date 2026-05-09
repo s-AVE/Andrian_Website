@@ -391,7 +391,13 @@ window.openProjectModal = openProjectModal;
       } else {
         showNote('Something went wrong. Please try again.', 'error');
       }
+  })
+  .catch(() => {
+    submitBtn.disabled = false;
+    btnText.textContent = 'Send Message';
+    showNote('Connection error. Please try again.', 'error');
   });
+});
   function showNote(msg, type) {
     formNote.textContent = msg; formNote.className = 'form-note ' + type;
     setTimeout(() => { formNote.textContent = ''; formNote.className = 'form-note'; }, 5000);
