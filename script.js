@@ -14,7 +14,7 @@ const PROJECTS = {
     tags:    ['Power BI', 'DAX', 'Power Query', 'KPI Cards'],
     desc:    'Dashboard analyzing analysis covers three dimensions of business performance overall sales health, product portfolio efficiency, and customer and store behavior drawing.',
     link:    { label: 'View on GitHub', url: 'https://github.com/s-AVE/MavenMarketDashboard/tree/main' },
-    link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1IEmPrZggvP3-1rZ0mQgdsJgu46db8CTz/view?usp=sharing' }, // ← paste your presentation URL here
+    link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1IVkF6uMBL4_5o6Nk7sShLT1ohLwlm4YP/view?usp=sharing' }, // ← paste your presentation URL here
     img:     'assets/project-09.png',
   },
   '02': {
