@@ -8,7 +8,16 @@
    PROJECT DATA — full descriptions for modal
    ============================================= */
 const PROJECTS = {
-  '01': {
+    '01': {
+    title:   'Maven Market - Sales Performance',
+    eyebrow: 'Power BI Dashboard',
+    tags:    ['Power BI', 'DAX', 'Power Query', 'KPI Cards'],
+    desc:    'Dashboard analyzing analysis covers three dimensions of business performance overall sales health, product portfolio efficiency, and customer and store behavior drawing.',
+    link:    { label: 'View on GitHub', url: 'https://github.com/s-AVE/MavenMarketDashboard/tree/main' },
+    link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1UxFcYhq-J5jvJ-rehxW7xGWZzpsVbXYE/view?usp=sharing' }, // ← paste your presentation URL here
+    img:     'assets/project-09.png',
+  },
+  '02': {
     title:   'Adventure Works Bike Company',
     eyebrow: 'Power BI Dashboard',
     tags:    ['Power BI', 'DAX', 'Power Query', 'KPI Cards'],
@@ -17,7 +26,7 @@ const PROJECTS = {
     link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1QMCVEVgeFBn6A2lgMJGXR0v4f4uFuVMS/view?usp=sharing' }, // ← paste your presentation URL here
     img:     'assets/project-01.png',
   },
-  '02': {
+  '03': {
     title:   'Financial Dashboard',
     eyebrow: 'Power BI Dashboard',
     tags:    ['Power BI', 'Financial Analysis', 'Budget Variance', 'Power Query'],
@@ -26,7 +35,7 @@ const PROJECTS = {
     link2:   { label: 'View Presentation', url: '' }, // ← paste your presentation URL here
     img:     'assets/project-02.png',
   },
-  '03': {
+  '04': {
     title:   'PPG M&E Visitasi Calculation',
     eyebrow: 'Microsoft Excel',
     tags:    ['Excel', 'M&E', 'PPG', 'Education'],
@@ -34,7 +43,7 @@ const PROJECTS = {
     link:    { label: 'View Spreadsheet', url: 'https://docs.google.com/spreadsheets/d/1S57F2rrX9okcUMJiEQBxTyAeD0PK2oEv9PkakxDlNPo/edit?usp=sharing' },
     img:     'assets/project-03.png',
   },
-  '04': {
+  '05': {
     title:   'MySQL Assignment Project',
     eyebrow: 'SQL · MySQL',
     tags:    ['SQL', 'MySQL', 'Window Functions', 'CTEs', 'Advanced Queries'],
@@ -42,7 +51,7 @@ const PROJECTS = {
     link:    { label: 'View on GitHub', url: 'https://github.com/s-AVE/MySQL-Assignment' },
     img:     'assets/project-04.png',
   },
-  '05': {
+  '06': {
     title:   'MySQL Sports Analysis Project',
     eyebrow: 'SQL · MySQL',
     tags:    ['SQL', 'MySQL', 'Sports Analytics', 'Advanced Aggregation'],
@@ -51,7 +60,7 @@ const PROJECTS = {
     link2:   { label: 'View Presentation', url: 'https://drive.google.com/file/d/1HlOmTDGgvdFjq0jB2SSO1xof6wfVr956/view?usp=sharing' },
     img:     'assets/project-05.png',
   },
-  '06': {
+  '07': {
     title:   'M&E Report — School Counseling Services',
     eyebrow: 'Analysis Report · Ministry of Education',
     tags:    ['M&E', 'Analysis Report', 'Education', 'Teacher Training'],
@@ -59,7 +68,7 @@ const PROJECTS = {
     link:    { label: 'View Report', url: 'https://drive.google.com/file/d/1RGs1C9gyQ_GBABfan7qRygGDowwCGqRL/view?usp=drive_link' },
     img:     'assets/project-06.png',
   },
-  '07': {
+  '08': {
     title:   'M&E Report — AI-Integrated Literacy & Numeracy',
     eyebrow: 'Analysis Report · Ministry of Education',
     tags:    ['M&E', 'Analysis Report', 'AI in Education', 'Pre-Post Test'],
@@ -67,7 +76,7 @@ const PROJECTS = {
     link:    { label: 'View Report', url: 'https://drive.google.com/file/d/1b5rdyc_YBjAYODaUi2CaU9e2tM3ApVNk/view?usp=drive_link' },
     img:     'assets/project-07.png',
   },
-  '08': {
+  '09': {
     title:   'PPG 4-Level M&E Survey Analysis',
     eyebrow: 'Google Looker Studio',
     tags:    ['Looker Studio', 'Survey Analysis', 'PPG 2024', 'M&E'],
